@@ -22,10 +22,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Tap Again", Toast.LENGTH_SHORT).show();
 
-                if (count == 0) {
-                    linearLayout.setBackgroundColor(getResources().getColor(R.color.blacku));
-
-                }
                 if (count == 1) {
                     linearLayout.setBackgroundColor(getResources().getColor(R.color.whitu));
                     textView.setTextColor(getResources().getColor(R.color.blacku));
@@ -64,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
                 count++;
                 if (count > 7) {
-                    count = 0;
+                    count = 1;
                 }
             }
         });
