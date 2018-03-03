@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 if (count > 6) {
                     count = 0;
                 }
+                //fixed the initial screen on 03-03-2018
             }
         });
     }
