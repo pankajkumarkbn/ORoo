@@ -1,8 +1,10 @@
 package com.example.dd.oroo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,8 +17,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //LinearLayout
         final LinearLayout linearLayout = findViewById(R.id.mainll);
         final TextView textView = findViewById(R.id.mytext);
+
+        //Button
+        Button button = findViewById(R.id.Btn);
+
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,6 +72,16 @@ public class MainActivity extends AppCompatActivity {
                 //fixed the initial screen on 03-03-2018
             }
         });
+        //Button
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent btnIntent1 = new Intent(getApplicationContext(), bmi.class);
+                startActivity(btnIntent1);
+            }
+        });
+
+
     }
 }
 

@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.dd.oroo.MainActivity">
-
-    <LinearLayout
         android:id="@+id/mainll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorAccent"
-        android:orientation="horizontal">
+    android:orientation="vertical"
+    tools:context="com.example.dd.oroo.MainActivity">
 
         <TextView
             android:id="@+id/mytext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
             android:layout_margin="4dp"
-            android:text="Tap On the screen"
+            android:text="Tap On the screen for Quotes"
             android:textAlignment="center"
             android:textColor="@color/whitu"
             android:textSize="54sp" />
+
+    <Button
+        android:id="@+id/Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        android:background="@color/whitu"
+        android:text="BMI Calculator"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp" />
     </LinearLayout>
-</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitu"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="BMI Calculator"
+        android:textColor="@color/colorAccent"
+        android:textSize="44sp" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="Your BMI:"
+        android:textColor="@color/colorAccent"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:background="@color/colorAccent"
+        android:hint="Your height(cm)"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/whitu"
+        android:textSize="44sp" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorAccent"
+        android:hint="Your weight(kg)"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/whitu"
+        android:textSize="44sp" />
+
+    <Button
+        android:id="@+id/Btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        android:background="@color/colorAccent"
+        android:text="BMI Calculator"
+        android:textAlignment="center"
+        android:textColor="@color/whitu"
+        android:textSize="22sp" />
+
+</LinearLayout>
